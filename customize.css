@@ -1,0 +1,26 @@
+*{
+    transition: all ease-in-out 0.3s;
+}
+
+
+
+.cool-link{
+    display: inline-block;
+    color: rgb(172, 119, 4);
+    text-decoration: none;
+}
+
+.cool-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(172, 119, 4);
+    transition: all ease-in 0.3s;
+}
+
+
+.cool-link:hover::after{
+    width: 100%;
+    transition: all ease-in-out 0.3s;
+}
